@@ -9,3 +9,9 @@ $ docker-compose up -d
 ```
 $ mysql -h 127.0.0.1 -u root -ppassword
 ```
+
+# What is in
+* nginx
+* postgres
+* mysql
+* redis
