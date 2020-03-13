@@ -37,6 +37,8 @@ services:
   postgres:
     image: postgres:latest
     container_name: my_postgres
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: 'trust'
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
     ports:
