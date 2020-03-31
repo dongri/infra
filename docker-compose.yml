@@ -13,7 +13,7 @@ services:
       - my_network
   
   mysql:
-    image: mysql:latest
+    image: mysql:5.7.29
     container_name: my_mysql
     environment:
       - MYSQL_ROOT_PASSWORD=password
