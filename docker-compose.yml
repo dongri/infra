@@ -2,7 +2,7 @@ version: "3"
 
 services:
 
-  nginx:
+  my_nginx:
     image: nginx:latest
     container_name: my_nginx
     volumes:
@@ -12,7 +12,7 @@ services:
     networks:
       - my_network
   
-  mysql:
+  my_mysql:
     image: mysql:5.7.29
     container_name: my_mysql
     environment:
@@ -24,7 +24,7 @@ services:
     networks:
       - my_network
 
-  redis:
+  my_redis:
     image: redis:latest
     container_name: my_redis
     volumes:
@@ -34,7 +34,7 @@ services:
     networks:
       - my_network
 
-  postgres:
+  my_postgres:
     image: postgres:latest
     container_name: my_postgres
     environment:
