@@ -3,6 +3,7 @@ version: "3"
 services:
 
   my_nginx:
+    platform: linux/x86_64
     image: nginx:latest
     container_name: my_nginx
     volumes:
@@ -13,6 +14,7 @@ services:
       - my_network
   
   my_mysql:
+    platform: linux/x86_64
     image: mysql:8.0.22
     container_name: my_mysql
     environment:
@@ -28,6 +30,7 @@ services:
       - my_network
 
   my_redis:
+    platform: linux/x86_64
     image: redis:latest
     container_name: my_redis
     volumes:
@@ -38,6 +41,7 @@ services:
       - my_network
 
   my_postgres:
+    platform: linux/x86_64
     image: postgres:latest
     container_name: my_postgres
     environment:
