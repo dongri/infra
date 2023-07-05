@@ -3,7 +3,7 @@ version: "3"
 services:
 
   my_nginx:
-    platform: linux/x86_64
+    platform: linux/arm64
     image: nginx:latest
     container_name: my_nginx
     volumes:
