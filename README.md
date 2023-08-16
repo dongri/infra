@@ -14,6 +14,17 @@ $ docker-compose up -d
 # mysql
 ```
 $ mysql -h 127.0.0.1 -u root -ppassword
+MYSQL_URL=mysql://root:password@localhost:3306
+```
+
+# postgres
+```
+POSTGRES_URL=postgresql://postgres:@localhost:5432/postgres
+```
+
+# mongo
+```
+MONGODB_URL=mongodb://localhost:27017
 ```
 
 ## Trouble shooting
