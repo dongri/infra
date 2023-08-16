@@ -53,6 +53,17 @@ services:
     networks:
       - my_network
 
+  my_mongo:
+    platform: linux/x86_64
+    image: mongo:4
+    container_name: my_mongo
+    volumes:
+      - ./data/mongo:/data/db
+    ports:
+      - "127.0.0.1:27017:27017"
+    networks:
+      - my_network
+
 networks:
   my_network:
     external: true
